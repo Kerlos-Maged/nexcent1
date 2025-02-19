@@ -20,10 +20,10 @@ const Text = () => {
           <div className="flex justify-between items-center flex-col md:flex-row gap-4">
             <div className="flex justify-center w-3/4 items-center gap-2">
               {
-                  Array(5).fill(null).map((_, i) => {
+                  Array(5).fill(1).map((e, i) => {
                     return (
                       <div className="basis-1/3 flex items-center justify-center">
-                        <Image src={`/icon${i+1}.png`} alt='' width={40} height={40} className="object-cover "/>
+                        <Image src={`/icon${i+1}.png`} alt='' width={40} height={40} className="object-cover" key={e+i}/>
                       </div>
                     )
                   })
