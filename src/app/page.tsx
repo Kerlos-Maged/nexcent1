@@ -44,7 +44,7 @@ export default function Home() {
           </div>
       </section>
       <Text/>
-      <Ccc />4
+      <Ccc />
       <Demo/>
     </main>
   );
