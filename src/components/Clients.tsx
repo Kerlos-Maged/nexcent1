@@ -19,7 +19,7 @@ const Clients = () => {
                 Array(7).fill(null).map((_, i) => {
                   return (
                     <CarouselItem className="basis-1/3 md:basis-1/5 flex items-center justify-center">
-                      <Image src={`/icon${i+1}.png`} alt='' width={40} height={40} className="object-cover "/>
+                      <Image src={`/icon${i+1}.png`} alt='' width={40} height={40} className="object-cover " key={i}/>
                     </CarouselItem>
                   )
                 })
